@@ -110,13 +110,13 @@ FlaskPageRouter seamlessly integrates with Python HTML (PYX), allowing you to wr
 
 Note:
 
-    * By convention, all PYX tag and tags attributes functions in FlaskPageRouter end with an underscore (_).
+    - By convention, all PYX tag and tags attributes functions in FlaskPageRouter end with an underscore (_).
     
-    * This convention is adopted to avoid conflicts with Python keywords and built-in functions.
+    - This convention is adopted to avoid conflicts with Python keywords and built-in functions.
     
-    * It also provides clarity and consistency in the usage of PYX tags.
+    - It also provides clarity and consistency in the usage of PYX tags.
     
-    * Example: tag(`h1_`, `h2_`, `div_` etc) tag attibutes(`class_`, `id_`, `src_` etc).
+    - Example: tag(`h1_`, `h2_`, `div_` etc) tag attibutes(`class_`, `id_`, `src_` etc).
     
 
 Example:
@@ -138,11 +138,11 @@ h1_(class_="title", id_="title1")("Hello, World!")
 
 Note: 
 
-    * You have the option to use a list or not in the second set of parentheses.
+    - You have the option to use a list or not in the second set of parentheses.
     
-    * Using list provides flexibility in constructing structures but is not necessary for simple cases.
+    - Using list provides flexibility in constructing structures but is not necessary for simple cases.
     
-    * Using a list in the second set of parentheses is optional and depends on the complexity of the structure the user wants to build.
+    - Using a list in the second set of parentheses is optional and depends on the complexity of the structure the user wants to build.
 
 ```python
 # In this case both will yield the same result. 
