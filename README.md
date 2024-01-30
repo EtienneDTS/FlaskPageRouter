@@ -154,7 +154,7 @@ h1_(class_="title", id_="title1")(["Hello, World!"])
 <h1 class="title" id="title1">Hello, world</h1>
 ```
 
-The second set of parentheses can be left empty when you need an empty tag and must be omitted in cases where the tag does not require content, such as the `<input>` tag.
+** The second set of parentheses can be left empty when you need an empty tag and must be omitted in cases where the tag does not require content, such as the `<input>` tag. **
 
 ```python
 # In this case both will yield the same result. 
