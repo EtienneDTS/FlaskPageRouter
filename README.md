@@ -8,7 +8,7 @@ In addition, FlaskPageRouter introduces Python HTML (PYX), offering a simplified
 
 ## Installation
 
-Install PageRouter using `pip install flask-pagerouter`:
+Install PageRouter using `pip`:
 
 ```bash
 pip install flask-pagerouter
