@@ -230,9 +230,9 @@ def page_greetings():
 
 ```html
 <div class="container">
-        <p>Hello John</p>
-        <p>Hello Bob</p>
-        <p>Hello Eva</p>
+        <p class="user">Hello John</p>
+        <p class="user">Hello Bob</p>
+        <p class="user">Hello Eva</p>
 </div>
 ```
 
