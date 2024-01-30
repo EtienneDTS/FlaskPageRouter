@@ -199,6 +199,8 @@ div_(class_="container")([
 
 With PYX in FlaskPageRouter, you can leverage the power of Jinja to make your HTML dynamic and programmable. The render_pyx function acts as a bridge between PYX and Jinja. In the first set of parentheses is for the context, and the second set of parentheses provide the inner content. This allows you to create dynamic and data-driven HTML content seamlessly.
 
+**Exemple 1**
+
 ```python
 from flask_pagerouter import render_pyx, div_, h1_, p_
 
@@ -219,6 +221,37 @@ def page_greetings():
         <p>Hello Bob</p>
         <p>Hello Eva</p>
 </div>
+```
+
+**Exemple 2**
+
+```python
+from flask_pagerouter import render_pyx, h1_, div_
+
+def page_user(user):
+    return render_pyx(user=user)([
+        "{% extends 'hello.html' %}",
+        "{% block content %}",
+        div_(class_="container")(
+            h1_(class_="title")("{{user}}")
+        ),
+        "{% endblock %}"
+    ])
+```
+
+```html
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <div class="container"><h1 class="title">John</h1></div>
+    </div>
+</body>
+</html>
 ```
 
 
