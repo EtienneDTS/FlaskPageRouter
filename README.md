@@ -60,16 +60,19 @@ Define your pages and foldes in a "pages" directory within your project. Each pa
 **Exemple 1**
 
 path : pages/index.py 
+
 url : yourdomain.com
 
 **Exemple 2**
 
 path : pages/level1/index.py
+
 url : yourdomain.com/level1
 
 **Exemple 3**
 
 path : pages/level1/home.py
+
 url : yourdomain.com/level1/home
 
 
@@ -78,6 +81,7 @@ You can use placeholders like "[data]" in your filenames or foldernames to pass 
 **Exemple 1**
 
 path : pages/user/[username].py
+
 url : yourdomain.com/user/john
 
 ```python
@@ -90,6 +94,7 @@ def page_user(username):
 **Exemple 2**
 
 path : pages/user/[user]/[id].py
+
 url : yourdomain.com/user/john/2
 
 ```python
@@ -104,10 +109,15 @@ def page_user_id(username, id):
 FlaskPageRouter seamlessly integrates with Python HTML (PYX), allowing you to write HTML directly in your Python code. This integration is facilitated by the render_pyx utility function, which supports Jinja 2 for template rendering.
 
 Note:
-    - By convention, all PYX tag and tags attributes functions in FlaskPageRouter end with an underscore (_).
-    - This convention is adopted to avoid conflicts with Python keywords and built-in functions.
-    - It also provides clarity and consistency in the usage of PYX tags.
-    - Example: tag(`h1_`, `h2_`, `div_` etc) tag attibutes(`class_`, `id_`, `src_` etc).
+
+    * By convention, all PYX tag and tags attributes functions in FlaskPageRouter end with an underscore (_).
+    
+    * This convention is adopted to avoid conflicts with Python keywords and built-in functions.
+    
+    * It also provides clarity and consistency in the usage of PYX tags.
+    
+    * Example: tag(`h1_`, `h2_`, `div_` etc) tag attibutes(`class_`, `id_`, `src_` etc).
+    
 
 Example:
     - Correct: `h1_("Hello, World!")`
@@ -127,9 +137,12 @@ h1_(class_="title", id_="title1")("Hello, World!")
 ```
 
 Note: 
-    - You have the option to use a list or not in the second set of parentheses.
-    - Using list provides flexibility in constructing structures but is not necessary for simple cases.
-    - Using a list in the second set of parentheses is optional and depends on the complexity of the structure the user wants to build.
+
+    * You have the option to use a list or not in the second set of parentheses.
+    
+    * Using list provides flexibility in constructing structures but is not necessary for simple cases.
+    
+    * Using a list in the second set of parentheses is optional and depends on the complexity of the structure the user wants to build.
 
 ```python
 # In this case both will yield the same result. 
