@@ -125,7 +125,7 @@ Example:
 
 
 ```python
-from flask-pagerouter import h1_
+from flask_pagerouter import h1_
 
 # PYX function for creating an <h1> element.
 h1_(class_="title", id_="title1")("Hello, World!")
