@@ -157,7 +157,6 @@ h1_(class_="title", id_="title1")(["Hello, World!"])
 **The second set of parentheses can be left empty when you need an empty tag and must be omitted in cases where the tag does not require content, such as the `<input>` tag.**
 
 ```python
-# In this case both will yield the same result. 
 div_(class_="container")()
 input_(type_="text", name_="greetings", placeholder_="Hello World")
 h1_()()
